@@ -2,7 +2,7 @@
 sidebar_position: 1
 ---
 
-# Example content
+# Example mermaid diagrams
 
 Testing a Mermaid sequence diagram
 
