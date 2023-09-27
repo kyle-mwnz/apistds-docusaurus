@@ -4,11 +4,8 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import { ThemeProvider, Container, Text, Button } from '@te-whatu-ora/anatomic';
-import { myCovidRecord } from '@te-whatu-ora/anatomic-themes';
 
 import styles from './index.module.css';
-import '@te-whatu-ora/anatomic/styles';
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -26,10 +23,6 @@ function HomepageHeader() {
             to="/docs/intro">
             Explore the API Standards
           </Link>
-          <Container>
-            <Text>Hello Anantomic!</Text>
-            <Button variant="primary">Primary button</Button>
-          </Container>
         </div>
       </div>
     </header>
@@ -42,12 +35,10 @@ export default function Home() {
     <Layout
       title={`HelloWorld API Standards`}
       description="Description will go into a meta tag in <head />">
-        <ThemeProvider theme={myCovidRecord.className}>
           <HomepageHeader />
           <main>
             <HomepageFeatures />
           </main>
-        </ThemeProvider>
     </Layout>
   );
 }

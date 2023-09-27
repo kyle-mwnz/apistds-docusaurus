@@ -72,7 +72,7 @@ module.exports = async function createConfig() {
             //   'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
           },
           theme: {
-            customCss: require.resolve('./src/css/custom.css'),
+            customCss: [require.resolve('./src/css/custom.css'), require.resolve('./node_modules/@te-whatu-ora/anatomic/dist/style.css')],
           },
         }),
       ],
