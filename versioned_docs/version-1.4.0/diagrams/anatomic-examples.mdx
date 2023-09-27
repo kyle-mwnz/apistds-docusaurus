@@ -1,0 +1,20 @@
+# Anatomic library
+
+Te Whatu Ora has an NPM package for a shared design library.
+
+We can use these React components within the markdown files themselves.
+
+```mdx-code-block
+import { ThemeProvider, Container, Text, Button, Alert } from '@te-whatu-ora/anatomic';
+import { myCovidRecord } from '@te-whatu-ora/anatomic-themes';
+import '@te-whatu-ora/anatomic/styles';
+
+<ThemeProvider theme={myCovidRecord.className}>
+  <Container>
+    <Button variant="primary">Primary button</Button>
+    <Alert variant="cautionary">This is a My Covid Record Style alert</Alert>
+  </Container>
+</ThemeProvider>
+```
+
+They can also be used for creating full pages.
