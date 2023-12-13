@@ -36,4 +36,4 @@ jobs:
 
       - name: Sync files to S3 bucket
         run: |
-          aws s3 sync build arn:aws:s3:::two-apistandards-draft
+          aws s3 sync build s3://two-apistandards-draft
